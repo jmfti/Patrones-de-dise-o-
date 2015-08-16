@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 10-abr-2014 14:26:15 by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+    <class name="pruebahibernate.DiscountCode" table="DISCOUNT_CODE" schema="APP">
+        <id name="discountCode" type="char">
+            <column name="DISCOUNT_CODE" length="1" />
+            <generator class="assigned" />
+        </id>
+        <property name="rate" type="big_decimal">
+            <column name="RATE" precision="4" />
+        </property>
+    </class>
+</hibernate-mapping>
